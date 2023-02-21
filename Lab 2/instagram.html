@@ -1,0 +1,242 @@
+<html>
+    <head>
+        <title>Instagram</title>
+        <link rel="icon" href="inst.png">
+        <style>
+            #iphone{
+                height: 90%;
+                width: 70%;
+                margin-right: 10cm;
+                position: absolute;
+            }
+            body{
+                background-color: rgb(245, 245, 245);
+            }
+            div#form{
+                background-color: white;
+                margin-left:21cm;
+                margin-top: 1cm;
+                position:absolute;
+                height: 8cm;
+                padding: 1cm 1.5cm;
+                border-color: rgb(212, 212, 212);
+                border-style:solid;
+                border-width: 1px;
+            }
+            input[type="text"],input[type="password"],input[type="submit"]{
+                border-radius: 3px;
+                border-style: solid;
+                padding: 10px 80px;
+                padding-left: 0.2cm;
+                font-size: 12px;
+                border-width: 1px;
+                border-color: rgb(212, 212, 212);
+                background-color: rgb(248, 248, 248);
+            }
+            input[type="submit"]{
+                padding: 8px 102px;
+                color:white;
+                border-radius: 10px;
+                font-weight: bold;
+                background-color: rgb(84, 183, 244);
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 13px;
+            }
+            input[type="submit"]:hover{
+                background-color: rgb(50, 124, 236);
+            }
+            img#inst{
+                width: 4cm;
+                height: 1.4cm;
+                padding-left: 1.2cm;
+            }
+            hr#hr1{
+                width: 2cm;
+                margin-right: 5cm;
+                position: absolute;
+            }
+            p#ili{
+                margin-top: 7.9cm;
+                margin-left: 25.3cm;
+                /* margin-right: 13cm; */
+                /* margin-bottom: ; */
+                position: absolute;
+                font-size: large;
+                color:grey;
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            hr#hr2{
+                width: 2cm;
+                margin-bottom: 4cm;
+                margin-left: 4.3cm;
+                position: absolute;
+            }
+            img#face{
+                height: 6%;
+                margin-top: 35px;
+                margin-left: 30px;
+                /* margin:1px; */
+                position: absolute;
+            }
+            em#vhod{
+                /* margin-bottom: 2px; */
+                margin-top: 39px;
+                margin-left: 60px;
+                font-style: normal;
+                color:rgb(29, 29, 157);
+                /* font-weight: bold; */
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                position: absolute;
+            }
+            a#forgot{
+                margin-top: 70px;
+                margin-left: 73px;
+                position:absolute;
+                text-decoration: none;
+                font-size: 15px;
+            }
+            a#forgot:hover{
+                color:rgb(179, 179, 179);
+            }
+            div#reg{
+                margin-left: 21cm;
+                margin-top: 11.3cm;
+                position: absolute;
+                background-color: white;
+                height: 1.3cm;
+                padding: 10px 29px;
+                border-width: 1px;
+                border-style:solid;
+                border-color: rgb(212, 212, 212);
+                font-size: 15px;
+                width: 7.94cm;
+            }
+            p#registr{
+                position: absolute;
+                margin-left:4px;
+                margin-bottom: 1cm;
+                color:rgb(74, 74, 74);
+                /* margin-bottom: 10cm; */
+                /* position: absolute; */
+            }
+            a#regi{
+                text-decoration: none;
+                /* margin-bottom: 1cm; */
+                padding-left: 3px;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                padding-bottom: 10px;
+                color: rgb(59, 155, 215);
+            }
+            a#regi:hover{
+                color:rgb(48, 94, 203);
+            }
+            p#install{
+                margin-left: 23.5cm;
+                margin-top: 13.6cm;
+                position: absolute;
+                color:rgb(67, 67, 67);
+            }
+            img#goo{
+                height: 6%;
+                margin-left:22.4cm;
+                margin-top: 14.5cm;
+                position: absolute;
+            }
+            img#micr{
+                height: 6%;
+                margin-left: 26.6cm;
+                margin-top: 14.5cm;
+                position: absolute;
+            }
+            div#bot{
+                position: absolute;
+                margin-left: 4.4cm;
+                margin-top: 17.7cm;
+            }
+            a#bottom{
+                color:rgb(132, 132, 132);
+                text-decoration: none;
+                font-size: 12px;
+                padding: 6px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            select#language{
+                width: 1.7cm;
+                position:absolute;
+                opacity: 0;
+                border:1px;
+                border-style: solid;
+                border-color: rgb(128, 128, 128);
+            }
+            div#lan{
+                font-family:Arial, Helvetica, sans-serif;
+                font-size: 13px;
+                color:rgb(132, 132, 132);
+                margin-left:16.8cm;
+                margin-top: 18.6cm;
+                height: 2cm;
+                position: absolute;
+            }
+            span#rus{
+                margin-left:0.1cm;
+                position: absolute;
+            }
+            span#strelka{
+                /* display: inline-block; */
+                transform: rotate(90deg);
+                position:absolute;
+                margin-left: 1.45cm;
+            }
+            span#insta{
+                margin-left:2cm;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="login.png" id="iphone"> 
+        <div id="form">
+            <form>
+                <img src="instagram.png" id="inst">
+                <p class="login">
+                    <label for=""></label>
+                    <input type="text" placeholder="Телефон,имя пользователя или эл. адрес">
+                </p>
+                <p class="login">
+                    <input type="password" placeholder="Пароль">
+                </p>
+                <p>
+                    <input type="submit" value="Войти">
+                </p>
+                    <hr id="hr1">  <hr id="hr2">
+                    <a href=""><img src="face.png" id="face"><em id="vhod"> Войти через Facebook</em> </a>
+                    <a href="" id="forgot">Забыли пароль?</a>
+                    
+                </form>
+        </div>
+        <div id="reg">
+            <p id="registr">У вас еще нет аккаунта? <a href="" id="regi">Зарегистрироваться</a></p>
+        </div>
+        <p id="ili">или</p>
+        <p id="install">Установите приложение.</p>
+        <!-- <a href=""><img src="google.png" id="goo"></a> -->
+        <a href=""><img src="google.png" id="goo"></a>
+        <p><a href=""><img src="micr.png" id="micr"></a></p>
+        <div id="bot">
+            <a href="" id="bottom">Meta</a> <a href="" id="bottom">Информация</a> <a href="" id="bottom">Блог</a> <a href="" id="bottom">Вакансии</a> <a href="" id="bottom">Помощь</a> <a href="" id="bottom">API</a> <a href="" id="bottom">Конфиденциальность</a> <a href="" id="bottom">Условия</a> <a href="" id="bottom">Популярные аккаунты</a> <a href="" id="bottom">Места</a> <a href="" id="bottom">Instagram Lite</a> <a href="" id="bottom">Загрузка контактов и лица, не являющиеся пользователями</a>
+        </div>
+        <div id="lan">
+            <span id="rus">Русский</span><span id="strelka">></span>
+            <select id="language">
+                <option value="af">Afrikaans</option>
+                <option value="cs">Cestina</option>
+                <option value="da">Dansk</option>
+                <option value="de">Deutsch</option>
+                <option value="en">English</option>
+                <option value="en-gb">English (UK)</option>
+                <option value="kz">Қазақша</option>
+                <option value="rus">Русский</option>
+            </select>
+            <span id="insta">© 2023 Instagram from Meta</span>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,298 @@
+<html>
+    <head>
+        <style>
+            body{
+                overflow-x: hidden;
+            }
+            img#main{
+                width: 102%;
+                /* margin-right: 20px; */
+                margin-left: -20px;
+                /* padding-right: 10px; */
+                position:absolute;
+                /* overflow-x: hidden; */
+            }
+            div#panel{
+                float:left;
+                /* margin-left: 40px; */
+                margin-top: 1.3cm;
+                background-color: rgb(60, 60, 60);
+                /* position: absolute; */
+            }
+            div#text{
+                color:white;
+                position: absolute;
+                margin-top: 2.3cm;
+                margin-left: 3cm;
+                font-size: 20px;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            p#in{
+                /* padding:px; */
+                line-height: 0.6cm;
+                font-size: 18px;
+            }
+            img#micro{
+                /* height: 30%; */
+                width: 7%;
+                /* padding: 0.2cm 0.4cm; */
+                margin-left:1.9cm;
+                margin-top: 7px;
+                position: absolute;
+            }
+            button#one{
+                margin-top: 4px;
+                background-color: #0067b8;
+                border-style: solid;
+                border-radius: 3px;
+                border-width: 0;
+                width: 6.8cm;
+                height: 1cm;
+                color:white;
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 17px;
+            }
+            button#one:hover{
+                background-color: rgb(41, 71, 147);
+            }
+            div#topp{
+                margin-left: 5.5cm;
+                margin-top: 0.3cm;
+                position: absolute;
+            }
+            a#top{
+                margin-left: 10px;
+                font-size: 15px;
+                text-decoration: none;
+                color:rgb(60, 60, 60);
+                /* font-weight: lighter; */
+            }
+            a#top:hover{
+                text-decoration:underline;
+                text-underline-offset: 6px;
+            }
+            div#product{
+                margin-left:29cm;
+                margin-top: -0.1cm;
+                position: absolute;
+                font-size: 15px;
+                color:rgb(60, 60, 60);
+            }
+            button#rus{
+                height: 1.3cm;
+                background-color: white;
+                border:none;
+                padding-bottom: 0.6cm;
+                /* position:absolute; */
+            }
+            button#rus:hover{
+                text-decoration: underline;
+                text-underline-offset: 6px;
+            }
+            button#rus:focus{
+                /* border:#0067b8; */
+                background-color: #ededed;
+                border-style:dashed;
+                border-width: 0.001cm;
+                text-decoration: none;
+            }
+            span#russ{
+                /* position:absolute; */
+                margin-top: 1.3cm;
+                margin-right: 0.3cm;
+                font-size: 12px;
+            }
+            button#poisk{
+                margin-left:33.3cm;
+                margin-top: 0.2cm;
+                border:none;
+                background-color: white;
+                font-size: 13px;
+                color:rgb(60, 60, 60);
+            }
+            button#vhod{
+                border:none;
+                background-color: white;
+                color:rgb(104, 104, 104);
+                margin-left: 0.3cm;
+            }
+            button#poisk:hover{
+                text-decoration: underline;
+                text-underline-offset: 6px;
+            }
+            a#six{
+                position:absolute;
+                margin-left:10cm;
+                margin-top: 7.3cm;
+                color:white;
+                text-decoration:none;
+                font-size: 19px;
+            }
+            img#user{
+                position:absolute;
+                margin-top:-0.2cm;
+                margin-left:0.2cm;
+                width: 2%;
+            }
+            button#vhod:hover{
+                text-decoration: underline;
+                text-underline-offset: 6px;
+            }
+            div#one{
+                margin-top: 15.5cm;
+                margin-left: 2cm;
+            }
+            img#one{
+                width: 22%;
+                
+            }
+            p#m36{
+                position: absolute;
+                margin-top: 0.25cm;
+                font-size: 29px;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            p#m365{
+                position: absolute;
+                margin-top: 1.4cm;
+                font-size: 17px;
+                line-height: 0.6cm;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            img#two{
+                width: 30%;
+            }
+            div#two{
+                margin-top: -4.7cm;
+                margin-left: 12cm;
+            }
+            p#edge,p#drive,p#note{
+                font-size: 29px;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                margin-top: 0.2cm;
+                position: absolute;
+            }
+            p#edg,p#driv,p#not{
+                position: absolute;
+                margin-top: 1.3cm;
+                font-size: 17px;
+                line-height: 0.6cm;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            div#three{
+                margin-top: -4.67cm;
+                margin-left: 22cm;
+            }
+
+            img#three{
+                width: 46%;
+            }
+            p#driv{
+                position: absolute;
+                margin-top: 1.3cm;
+                font-size: 17px;
+                line-height: 0.6cm;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            div#four{
+                margin-left:31cm;
+                margin-top: -4.62cm;
+            }
+            img#four{
+                width:93%;
+            }
+            a#four,a#three,a#two,a#one,a#onee{
+                position: absolute;
+                margin-top: 0.4cm;
+                text-decoration: none;
+                color:rgb(65, 112, 228);
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            a#one{
+                margin-left:-8.4cm;
+                margin-top:10cm;
+                font-size: 18px;
+            }
+            a#onee{
+                margin-left: -3.4cm;
+                margin-top: 9.99cm;
+                font-size: 18px;
+                height: 2cm;
+            }
+            a#three{
+                margin-left: -8.2cm;
+                margin-top: 8.5cm;
+                height: 2cm;
+                font-size: 18px;
+            }
+            a#two{
+                margin-left:-8.3cm;
+                margin-top: 8.5cm;
+                font-size: 18px;
+            }
+            a#four:hover,a#three:hover,a#two:hover,a#one:hover,a#onee:hover{
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="" id="mic"><img src="micro.png" id="micro"></a> 
+        <div id="topp">
+            <a href="" id="top">Microsoft 365</a> <a href="" id="top">Office</a> <a href="" id="top">Windows</a> <a href="" id="top">Поддержка</a> 
+        </div>
+        <div id="product">
+            <button id="rus"><span id="russ"><br>Продукты Майкрософт ˅</span></button>
+        </div>
+            <div id="panel">
+            <a href=""><img src="microsoft.jfif" id="main"> 
+                <div id="text">
+                    <h1>Разработано для жизни —<br>
+                    сегодня и в будущем</h1>
+                    <p id="in">Следующее поколение игр. Ваши цели. Друзья и семья. С<br>
+                        Windows 11 вы станете еще ближе к тому, что успели<br>
+                        полюбить.
+                    </p>
+                    <button id="one">Проверьте, готов ли ваш ПК</button>
+                </div>
+            </a>
+        </div>
+        <button id="poisk">Поиск🔎</button>
+        <a href=""><button id="vhod">Войти<img src="user.svg" id="user"> </button></a>
+        <!-- <form id="search">
+            <input type="search" id="query" placeholder="Поиск на Microsoft.com">
+            <button>Search</button>
+        </form> -->
+        <div id="one">
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-M365-Icon-Bounce-Word-Merch?wid=515&hei=293&fit=crop" id="one">
+            <p id="m36">Microsoft 365</p>
+            <p id="m365">Приложения и функции, которые помогут<br>
+                вам воплотить идеи в реальность,<br>
+                оставаться в безопасности и<br>
+                сосредоточиться на важных вещах в<br>
+                жизни.</p>
+            <a href="" id="one">Для 1 человека ></a> <a href="" id="onee">До 6 человек ></a> 
+        </div>
+        <div id="two">
+            <img src="edge.avif" id="two">
+            <p id="edge">Microsoft Edge</p>
+            <p id="edg">Потрясающая производительность, больше <br>
+                конфиденциальности, продуктивности и <br>
+                дополнительных возможностей.</p>
+            <a href="" id="two">Скачать ></a>
+        </div>
+        <div id="three">
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-Soft-CP-OneDriveCampaignRefresh-2?wid=515&hei=293&fit=crop" id="three">
+            <p id="drive">Microsoft OneDrive</p>
+            <p id="driv">Сохраняйте свои файлы и фотографии на <br>
+                OneDrive — они будут доступны с любого <br>
+                устройства и где угодно.</p>
+            <a href="" id="three">Подробнее ></a>
+        </div>
+        <div id="four">
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-PC-SMB-OneNote?wid=515&hei=293&fit=crop" id="four">
+            <p id="Note">Microsoft OneNote</p>
+            <p id="Not">Приведите свои заметки и дела в порядок.<br>
+            <a href="" id="four">Узнать больше ></a>
+        </div>
+    </body>
+</html>
