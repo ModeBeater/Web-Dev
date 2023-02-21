@@ -1,9 +1,11 @@
-<p>product-details works!</p>
 <h2>Product Details</h2>
 
 <div *ngIf="product">
   <h3>{{ product.name }}</h3>
   <h4>{{ product.price | currency }}</h4>
   <p>{{ product.description }}</p>
-  <button type="button" (click)="addToCart(product)">Buy</button>
+  <img src={{product.img1}} style="width:  150px;height: 300px;float: left;">
+  <img src={{product.img2}} style="width:  150px;height: 300px;float: left;margin-left:1cm">
+  <img src={{product.img3}} style="width:  150px;height: 300px;float: left;margin-left:1cm;">
+  <button type="button" (click)="addToCart(product)" style="margin-top:6cm;margin-right:5cm;position: absolute;">Buy</button>
 </div>
