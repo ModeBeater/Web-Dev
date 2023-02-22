@@ -4,8 +4,13 @@
   <h3>{{ product.name }}</h3>
   <h4>{{ product.price | currency }}</h4>
   <p>{{ product.description }}</p>
+  <div>
   <img src={{product.img1}} style="width:  150px;height: 300px;float: left;">
   <img src={{product.img2}} style="width:  150px;height: 300px;float: left;margin-left:1cm">
   <img src={{product.img3}} style="width:  150px;height: 300px;float: left;margin-left:1cm;">
-  <button type="button" (click)="addToCart(product)" style="margin-top:6cm;margin-right:5cm;position: absolute;">Buy</button>
+  </div>
+  <button type="button" (click)="addToCart(product)" style="margin-top:1cm">Buy</button>
+  <a href={{product.link}} target="_blank" style="margin-left:1cm"><button>kaspi</button></a>
+  <!-- <button (click)="window.location.href=product.link">kaspi</button> -->
 </div>
+

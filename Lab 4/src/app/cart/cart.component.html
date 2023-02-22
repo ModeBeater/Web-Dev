@@ -5,6 +5,7 @@
 </p>
 
 <div class="cart-item" *ngFor="let item of items">
+  <span><img height="50px" src={{item.image}}></span>
   <span>{{ item.name }} </span>
   <span>{{ item.price | currency }}</span>
 </div>
