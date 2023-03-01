@@ -1,0 +1,19 @@
+<app-top-bar></app-top-bar>
+
+<div class="container">
+    <div style="margin-left:10px; margin-right: 500px;">
+    <h2><button (click)="show()" style="margin-left: 10px;">Categories</button></h2>
+    <div *ngIf="display">
+        <div *ngFor="let category of categories" style="margin-left: 10px;">
+            <h3><a (click)="changeCategory(category.name)">{{category.name}}</a></h3>
+        </div>
+    </div>
+    </div>
+  <router-outlet></router-outlet>
+</div>
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->

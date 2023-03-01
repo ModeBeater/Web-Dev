@@ -1,0 +1,44 @@
+<h2>Products</h2>
+<div *ngIf="getCategory() == 'all'">
+  <div *ngFor="let product of products" style="margin-bottom: 20px;" id="products">
+  <img src={{product.image}}>
+  <h3>
+    <a
+      [title]="product.name + ' details'"
+      [routerLink]="['/products', product.id]"
+    >
+      {{ product.name }}
+    </a>
+  </h3>
+
+  <p *ngIf="product.description">Description: {{ product.description }}</p>
+  <p *ngIf="product.rating">Rating: {{product.rating}}</p>
+  <a href="https://wa.me/?text={{product.link}}" target="_blank"><button type="button">Share</button></a>
+  <button style="margin-left: 1cm;"(click)="remove(product.id)">remove</button>
+  <app-product-alerts [product]="product" (notify)="onNotify()">
+  </app-product-alerts>
+  </div>
+</div>
+<div *ngFor="let product of getFiltered()" style="margin-bottom: 20px;" id="products">
+  <img src={{product.image}}>
+  <h3>
+    <a
+      [title]="product.name + ' details'"
+      [routerLink]="['/products', product.id]"
+    >
+      {{ product.name }}
+    </a>
+  </h3>
+
+  <p *ngIf="product.description">Description: {{ product.description }}</p>
+  <p *ngIf="product.rating">Rating: {{product.rating}}</p>
+  <a href="https://wa.me/?text={{product.link}}" target="_blank"><button type="button">Share</button></a>
+  <button style="margin-left: 1cm;" (click)="remove(product.id)">remove</button>
+  <app-product-alerts [product]="product" (notify)="onNotify()">
+  </app-product-alerts>
+  </div>
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
