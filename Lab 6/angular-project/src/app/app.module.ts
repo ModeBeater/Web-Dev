@@ -7,14 +7,16 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { AlbumsComponent } from './albums/albums.component';
 import {HttpClientModule} from "@angular/common/http";
-import { AlbumsDetailComponent } from './albums-detail/albums-detail.component'
+import { AlbumsDetailComponent } from './albums-detail/albums-detail.component';
+import { AlbumPhotosComponent } from './album-photos/album-photos.component'
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutComponent,
     AlbumsComponent,
-    AlbumsDetailComponent
+    AlbumsDetailComponent,
+    AlbumPhotosComponent
   ],
   imports: [
     BrowserModule,
