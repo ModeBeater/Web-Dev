@@ -1,10 +1,11 @@
-<p>albums-detail works!</p>
 Title: {{album.title}}<br>
 Id: {{album.id}}<br>
 User Id: {{album.userId}}
 <fieldset>
     <input type="text" placeholder="new Title" [(ngModel)]="newAlbum.title">
-    <button (click)="changeTitle()">save</button>
+    <button (click)="changeTitle()" style="margin-left: 10px;">save</button>
 </fieldset>
+<div style="margin-top: 10px;">
 <button routerLink="/albums">return</button>
-<button routerLink="/albums/{{id}}/photos">Photos</button>
+<button routerLink="/albums/{{id}}/photos" style="margin-left:2cm">Photos</button>
+</div>

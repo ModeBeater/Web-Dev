@@ -4,8 +4,8 @@
     <textarea [(ngModel)]="newAlbum.userId">
 
     </textarea>
-    <button (click)="addAlbum()">Add album</button>
+    <button (click)="addAlbum()" style="margin-left:10px">Add album</button>
 </fieldset>
 <div *ngFor="let album of albums">
-    <a routerLink="/albums/{{album.id}}">{{album.id}} {{album.title}}</a><br> <button (click)="delete(album.id)">delete</button>
+    <a routerLink="/albums/{{album.id}}">{{album.id}} {{album.title}}</a><br> <button (click)="delete(album.id)" style="margin-top:10px; margin-bottom: 5px;">delete</button>
 </div>
