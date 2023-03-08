@@ -8,7 +8,9 @@ import { AboutComponent } from './about/about.component';
 import { AlbumsComponent } from './albums/albums.component';
 import {HttpClientModule} from "@angular/common/http";
 import { AlbumsDetailComponent } from './albums-detail/albums-detail.component';
-import { AlbumPhotosComponent } from './album-photos/album-photos.component'
+import { AlbumPhotosComponent } from './album-photos/album-photos.component';
+import { NotFoundComponent } from './not-found/not-found.component'
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,12 +18,14 @@ import { AlbumPhotosComponent } from './album-photos/album-photos.component'
     AboutComponent,
     AlbumsComponent,
     AlbumsDetailComponent,
-    AlbumPhotosComponent
+    AlbumPhotosComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

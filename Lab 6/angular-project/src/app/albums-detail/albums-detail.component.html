@@ -3,7 +3,7 @@ Title: {{album.title}}<br>
 Id: {{album.id}}<br>
 User Id: {{album.userId}}
 <fieldset>
-    <input type="text" placeholder="new Title" id="newText">
+    <input type="text" placeholder="new Title" [(ngModel)]="newAlbum.title">
     <button (click)="changeTitle()">save</button>
 </fieldset>
 <button routerLink="/albums">return</button>

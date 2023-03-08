@@ -3,4 +3,6 @@
 <button routerLink="/albums/{{id}}">return</button>
 <div *ngFor="let album of albumPhoto">
     <img src={{album.thumbnailUrl}} style="margin-right: 3cm;"> <img src={{album.url}}>
+    <strong style="margin-left:10px">Title: {{album.title}}</strong>
+
 </div>
