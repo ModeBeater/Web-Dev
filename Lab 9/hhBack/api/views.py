@@ -11,13 +11,11 @@ def company_by_id(request,id):
         if str(i['id']) == str(id):
             return JsonResponse(i,safe=False,json_dumps_params={'indent' : 2})
     return HttpResponse('do not have such id')
-def company_by_id_vacancy(request,id):
+def company_vacancy(request,id):
     temp = []
-    for i in list(Company.objects.values()):
-        if str(i['id']) == str(id):
-            for j in list(Vacancy.objects.values()):
-                if j['category_id'] == i['id']:
-                    temp.append(j)
+    for i in list(Vacancy.objects.values()):
+        if str(i['company_id']) == str(id):
+            temp.append(i)
     if len(temp) != 0:
         return JsonResponse(temp, safe=False, json_dumps_params={'indent' : 2})
     return HttpResponse('do not have such id')
