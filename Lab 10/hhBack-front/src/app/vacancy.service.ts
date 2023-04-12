@@ -8,8 +8,13 @@ import { Observable } from 'rxjs';
 })
 export class VacancyService {
   BASE_URL = 'http://127.0.0.1:8000'
-  constructor(private client: HttpClient ) {}
+  constructor(private client: HttpClient) {}
+  ngOnInit(): void{
+  }
   getVacancies(): Observable<Vacancy[]>{
-    return this.client.get<Vacancy[]>(`${this.BASE_URL}/api/vacancies/`)
+    return this.client.get<Vacancy[]>(`${this.BASE_URL}/api/vacancies`)
+  }
+  getVacanciesCompanies(id:number): Observable<Vacancy[]>{
+    return this.client.get<Vacancy[]>(`${this.BASE_URL}/api/companies/${id}/vacancies`)
   }
 }

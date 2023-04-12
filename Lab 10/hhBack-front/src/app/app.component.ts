@@ -7,19 +7,6 @@ import { CompanyService } from './company.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
+export class AppComponent{
   title = 'hhBack-front';
-  companies: Company[] = [];
-  vacancies: Vacancy[] = [];
-  constructor(private vacancyService: VacancyService, private companyService: CompanyService){
-
-  }
-  ngOnInit(): void {
-      this.vacancyService.getVacancies().subscribe((data) => {
-        console.log(data);
-      })
-      this.companyService.getCompanies().subscribe((data) => {
-        console.log(data);
-      })
-  }
 }
