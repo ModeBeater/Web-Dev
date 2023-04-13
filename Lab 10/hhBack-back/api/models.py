@@ -9,7 +9,7 @@ class Company(models.Model):
         verbose_name_plural = 'Companies'
     def to_json(self):
         return{
-            'name': self.id,
+            'name': self.name,
             'description': self.description,
             'city': self.city,
             'address': self.address
@@ -26,10 +26,10 @@ class Vacancy(models.Model):
         return f'{self.name}'
     def to_json(self):
         return{
-            'name': self.id,
+            'name': self.name,
             'description': self.description,
             'salary': self.salary,
-            'company': self.company
+            # 'company': self.company
         }
     name = models.CharField(max_length=255)
     description = models.TextField(max_length=1000,default='')
